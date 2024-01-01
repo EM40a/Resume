@@ -1,0 +1,20 @@
+---
+import { Icon } from "astro-icon/components";
+import { SM_ICONS } from "../../assets/Icons";
+---
+
+<ul class="flex gap-x-3 my-8 w-fit">
+  {
+    SM_ICONS.map((icon) => (
+      <a
+        href={icon.url}
+        target="_blank"
+        aria-label={icon.name}
+        rel="noopener noreferrer"
+        class="transition-opacity duration-200 ease-in-out text-light-blue-100 opacity-75 hover:opacity-100"
+      >
+        <Icon class="size-8" name={icon.set + ":" + icon.name} />
+      </a>
+    ))
+  }
+</ul>
