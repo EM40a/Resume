@@ -1,15 +1,25 @@
 ---
-import About from "./SectionAbout.astro";
-import Section from "./SectionContainer.astro";
-import Experience from "./SectionExperience.astro";
+import About from "../About/Index.astro";
+import Section from "./Container.astro";
+import Experience from "../Experience/Index.astro";
+import Projects from "../Projects/index.astro";
+import Skills from "../Technologies/Index.astro";
 ---
 
-<main class="lg:w-1/2 lg:py-28 flex flex-col gap-y-28" id="menu">
+<main class="lg:w-1/2 lg:my-28 mb-16 flex flex-col gap-y-24" id="menu">
   <Section id="about">
     <About />
   </Section>
 
   <Section id="experience">
     <Experience />
+  </Section>
+
+  <Section id="projects">
+    <Projects />
+  </Section>
+
+  <Section id="technologies">
+    <Skills />
   </Section>
 </main>

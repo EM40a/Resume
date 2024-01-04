@@ -1,0 +1,40 @@
+---
+import Button from "../Button/index.astro";
+import Tags from "../Tags/Index.astro";
+import { PROJECTS } from "./Projects"
+---
+
+<h2 class="subtitle">proyectos</h2>
+
+<section class="flex flex-col gap-y-28">
+{
+  PROJECTS.map(({ title, description, url, image, tags }) => (
+    <article>
+      <h1 class="text-2xl font-semibold text-accent">{title}</h1>
+      
+      {
+        description.map((d) => (
+            <p class="paragraph mt-3">{d}</p>
+        ))
+      }
+
+      { 
+        image &&
+        <figure class="mb-3 rounded-md bg-img-project bg-cover overflow-hidden">
+            <img
+            class="md:translate-x-28 md:translate-y-14 md:scale-125 transition-transform duration-300 ease-in-out cursor-pointer hover:scale-100 hover:translate-x-0 hover:translate-y-0"
+            src={image}
+            alt=`Preview del proyecto ${title}`
+            title={url}
+            />
+        </figure>
+      }
+          
+      <div class="flex flex-col items-stretch md:items-start">
+        <Tags list={tags} />
+        <Button url={url} />
+      </div>
+    </article>
+  ))
+}
+</section>

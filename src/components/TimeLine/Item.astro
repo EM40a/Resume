@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import Tags from "../Tags/Index.astro";
 
 interface Props {
   title: string;
@@ -11,13 +12,9 @@ interface Props {
   location?: string;
   date: string;
   tags?: string[];
-  button?: {
-    label: string;
-    url: string;
-  };
 }
 
-const { title, link, description, date, location, tags, button } = Astro.props;
+const { title, link, description, date, location, tags } = Astro.props;
 ---
 
 <div
@@ -36,7 +33,7 @@ const { title, link, description, date, location, tags, button } = Astro.props;
 
 <h3 class="mt-2 text-lg font-semibold text-gray-900 dark:text-white">
   {title}
-   |
+  |
   {
     link && (
       <a
@@ -56,32 +53,10 @@ const { title, link, description, date, location, tags, button } = Astro.props;
   }
 </h3>
 
-{description.map((paragraph) => <p class="paragraph  text-gray-400">{paragraph}</p>)}
-
 {
-  tags && (
-    <div class="my-4">
-      <ul class="flex flex-wrap gap-2">
-        {tags.map((tag) => (
-          <li class="px-3 py-1 text-xs font-medium leading-5 rounded-full bg-teal-400/10 text-accent transition">
-            {tag}
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
+  description.map((paragraph) => (
+    <p class="paragraph  text-gray-400">{paragraph}</p>
+  ))
 }
 
-{
-  button && (
-    <a
-      href={button.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="inline-flex items-center px-4 py-2 text-sm font-medium border border-light-blue-300 rounded-lg hover:bg-teal-400/10 dark:text-accent "
-    >
-      {button.label || "Saber más..."}
-      <Icon name="mdi:arrow-right" class="animate-bounce-x ml-5" />
-    </a>
-  )
-}
+{tags && <Tags list={tags} />}
