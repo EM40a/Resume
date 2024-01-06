@@ -4,6 +4,7 @@ import Tags from "../Tags/Index.astro";
 
 interface Props {
   title: string;
+  subtitle?: string;
   link?: {
     label: string;
     url: string;
@@ -14,7 +15,8 @@ interface Props {
   tags?: string[];
 }
 
-const { title, link, description, date, location, tags } = Astro.props;
+const { title, subtitle, link, description, date, location, tags } =
+  Astro.props;
 ---
 
 <div
@@ -33,25 +35,30 @@ const { title, link, description, date, location, tags } = Astro.props;
 
 <h3 class="mt-2 text-lg font-semibold text-gray-900 dark:text-white">
   {title}
-  |
+
   {
     link && (
-      <a
-        href={link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="opacity-75 hover:opacity-100"
-      >
-        {link.label}
+      <>
+        <>|</>
+        <a
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="opacity-75 hover:opacity-100"
+        >
+          {link.label}
 
-        <Icon
-          name="mdi:open-in-new"
-          class="inline-flex size-3 align-text-top"
-        />
-      </a>
+          <Icon
+            name="mdi:open-in-new"
+            class="inline-flex size-3 align-text-top"
+          />
+        </a>
+      </>
     )
   }
 </h3>
+
+{subtitle && <h4 class="mb-4 text-sm text-gray-500">{subtitle}</h4>}
 
 {
   description.map((paragraph) => (
