@@ -2,18 +2,19 @@
 import { Icon } from "astro-icon/components";
 
 interface Props {
-  url: string;
+  href: string;
+  target?: string;
 }
 
-const { url } = Astro.props;
+const { href, target } = Astro.props;
 ---
 
 <a
-  href={url}
-  target="_blank"
+  href={href}
+  target={target || "_blank"}
   rel="noopener noreferrer"
   class="h-12 inline-flex items-center justify-center px-6 text-sm font-medium border border-light-blue-300 rounded-lg hover:bg-teal-400/10 dark:text-accent"
 >
-  {"Ver más..."}
+  <slot>Ver más...</slot>
   <Icon name="mdi:arrow-right" class="animate-bounce-x ml-5" />
 </a>
