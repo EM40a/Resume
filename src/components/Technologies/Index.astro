@@ -1,24 +1,6 @@
 ---
-import { TECHNOLOGIES } from '../../../public/js/Tags'
+import Scroller from './Scroller.astro'
 ---
 
-<h2 class='subtitle'>herramientas y tecnologías</h2>
-<ul class='grid grid-cols-[repeat(auto-fit,_minmax(5rem,1fr))] gap-4'>
-  {
-    TECHNOLOGIES.map(ICON => {
-      let title = ICON.split('/').pop().split('.')[0]
-
-      return (
-        <figure class='aspect-square rounded-md border-2 border-accent transition-transform ease-in-out flex items-center bg-teal-400/10 hover:-translate-y-2 duration-500 hover:bg-teal-300/20'>
-          <img
-            loading='lazy'
-            src={ICON}
-            alt={title}
-            title={title}
-            class='size-full object-scale-down p-4'
-          />
-        </figure>
-      )
-    })
-  }
-</ul>
+<h2 class='subtitle max-w-2xl'>herramientas y tecnologías</h2>
+<Scroller data-speed='slow' data-direction='right' />

@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string
+  technology: string
+}
+
+const { title, technology } = Astro.props
+---
+
+<figure
+  class='h-24 aspect-square rounded-md hover:border-2 hover:border-accent transition-transform ease-in-out duration-500 hover:bg-teal-300/20'>
+  <img
+    loading='lazy'
+    src={technology}
+    alt={title}
+    title={title}
+    class='size-full object-scale-down p-4'
+  />
+</figure>
