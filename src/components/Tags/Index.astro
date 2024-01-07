@@ -1,16 +1,16 @@
 ---
 interface Props {
-  list: string[];
+  list: string[]
 }
 
-const { list } = Astro.props;
+const { list } = Astro.props
 ---
 
-<div class="my-4">
-  <ul class="flex flex-wrap gap-2" aria-label="Tecnologías usadas">
+<div class='my-4'>
+  <ul class='flex flex-wrap gap-2' aria-label='Tecnologías usadas'>
     {
-      list.map((tag) => (
-        <li class="px-3 py-1 text-xs font-medium leading-5 rounded-full bg-teal-400/10 text-accent transition">
+      list.map(tag => (
+        <li class='px-3 py-1 text-xs font-medium leading-5 rounded-full bg-teal-400/10 text-accent transition'>
           {tag}
         </li>
       ))

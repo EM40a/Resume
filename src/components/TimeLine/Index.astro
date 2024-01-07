@@ -1,17 +1,17 @@
 ---
-import Item from "./Item.astro";
+import Item from './Item.astro'
 
 interface Props {
-  data: any[];
+  data: any[]
 }
 
-const { data } = Astro.props;
+const { data } = Astro.props
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
+<ol class='relative border-s border-gray-200 dark:border-gray-700'>
   {
-    data.map((d) => (
-      <li class="mb-10 ms-4">
+    data.map(d => (
+      <li class='mb-10 ms-4'>
         <Item {...d} />
       </li>
     ))

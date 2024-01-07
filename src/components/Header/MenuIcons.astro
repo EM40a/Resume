@@ -1,19 +1,18 @@
 ---
-import { Icon } from "astro-icon/components";
-import { SM_ICONS } from "../../../public/js/Icons";
+import { Icon } from 'astro-icon/components'
+import { SM_ICONS } from '../../../public/js/Icons'
 ---
 
-<ul class="flex gap-x-3 my-8 w-fit">
+<ul class='flex gap-x-3 my-8 w-fit'>
   {
-    SM_ICONS.map((icon) => (
+    SM_ICONS.map(icon => (
       <a
         href={icon.url}
-        target="_blank"
+        target='_blank'
         aria-label={icon.name}
-        rel="noopener noreferrer"
-        class="transition-opacity duration-200 ease-in-out text-light-blue-100 opacity-75 hover:opacity-100"
-      >
-        <Icon class="size-8" name={icon.set + ":" + icon.name} />
+        rel='noopener noreferrer'
+        class='transition-opacity duration-200 ease-in-out text-light-blue-100 opacity-75 hover:opacity-100'>
+        <Icon class='size-8' name={icon.set + ':' + icon.name} />
       </a>
     ))
   }

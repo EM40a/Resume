@@ -1,17 +1,17 @@
 # Portafolio
 
-Este es mi portafolio personal, donde muestro mis proyectos y habilidades. 
+Este es mi portafolio personal, donde muestro mis proyectos y habilidades.
 
 ![Preview](public/Preview.webp)
 
-Diseñado en [Figma](https://figma.com) y llevado a código con [Visual Studio Code](https://code.visualstudio.com/). 
+Diseñado en [Figma](https://figma.com) y llevado a código con [Visual Studio Code](https://code.visualstudio.com/).
 Fue creado con [Astro](https://astro.build/), un nuevo marco de trabajo para construir sitios web modernos.
 
 También utilice [Tailwind CSS](https://tailwindcss.com/), un marco de trabajo CSS de utilidad de baja capa que le brinda todas las herramientas que necesita para construir componentes personalizados sin CSS.
 
 Para los iconos se utilizo [AstroIcons](https://www.astroicon.dev/) un sencillo sistema de iconos para Astro que cuenta con los iconos de [Iconify](https://iconify.design/).
 
-## 🚀 Estructura del Proyecto 
+## 🚀 Estructura del Proyecto
 
 Dentro del proyecto, encontraras la siguiente estructura de archivos y directorios:
 

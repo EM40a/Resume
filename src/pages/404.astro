@@ -1,21 +1,20 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button/index.astro";
+import Layout from '../layouts/Layout.astro'
+import Button from '../components/Button/index.astro'
 ---
 
 <Layout
-  title="404 Página no encontrada"
-  description="Página no encontrada. La página que buscas no existe."
->
-  <div class="pt-40 flex flex-col items-center gap-y-4">
-    <h1 class="mb-4 text-9xl animate-neon">404</h1>
-    <h2 class="text-lg px-4 py-2 bg-accent text-dark-blue-500">
+  title='404 Página no encontrada'
+  description='Página no encontrada. La página que buscas no existe.'>
+  <div class='pt-40 flex flex-col items-center gap-y-4'>
+    <h1 class='mb-4 text-9xl animate-neon'>404</h1>
+    <h2 class='text-lg px-4 py-2 bg-accent text-dark-blue-500'>
       Opps! Página no encontrada
     </h2>
-    <p class="md:w-[60ch] text-center">
+    <p class='md:w-[60ch] text-center'>
       La página que estas buscando no existe. Es posible que se haya escrito mal
       la dirección o que la página se haya movido.
     </p>
-    <Button href="../" target="_self">Volver al inicio</Button>
+    <Button href='../' target='_self'>Volver al inicio</Button>
   </div>
 </Layout>
