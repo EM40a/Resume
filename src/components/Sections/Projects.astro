@@ -1,4 +1,6 @@
-export const PROJECTS = [
+---
+import Card from '../../components/Card/Index.astro'
+const PROJECTS = [
   {
     title: 'Portafolio',
     description: [
@@ -24,7 +26,6 @@ export const PROJECTS = [
     ],
     url: 'https://github.com/EM40a/Reserva-Ya',
   },
-
   {
     title: 'Edenv - Cuidado al medio ambiente (SPA)',
     description: [
@@ -35,3 +36,6 @@ export const PROJECTS = [
     tags: ['HTML5', 'CSS3', 'JavaScript ES6', 'SASS'],
   },
 ]
+---
+
+<Card data={PROJECTS} />

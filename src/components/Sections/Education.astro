@@ -1,4 +1,6 @@
-export const Education = [
+---
+import Timeline from '../TimeLine/Index.astro'
+const EDUCATION = [
   {
     title: 'Universidad Tecnológica Nacional (UTN)',
     subtitle: 'Tecnicatura en Programación',
@@ -21,3 +23,6 @@ export const Education = [
     tags: ['Python', 'MySQL', 'Arduino', 'Bootstrap'],
   },
 ]
+---
+
+<Timeline data={EDUCATION} />

@@ -1,14 +1,20 @@
 ---
-import { TECHNOLOGIES } from '../../../public/js/Tags'
 import Item from './Item.astro'
+interface Props {
+  direction?: 'left' | 'right'
+  speed?: 'fast' | 'slow'
+  items: any[]
+}
+
+const { direction, speed, items } = Astro.props
 ---
 
-<div class='scroller' {...Astro.props}>
+<div class='scroller' data-speed={speed} data-direction={direction}>
   <ul class='scroller-inner'>
     {
-      TECHNOLOGIES.map(icon => {
-        let title = icon.split('/').pop().split('.')[0] // remove the path and extension
-        return <Item title={title.toUpperCase()} technology={icon} />
+      items.map(e => {
+        let title = e.split('/').pop().split('.')[0].toUpperCase() // remove the path and extension
+        return <Item title={title} src={e} />
       })
     }
   </ul>

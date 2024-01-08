@@ -1,14 +1,22 @@
 ---
 import Button from "../Button/index.astro";
 import Tags from "../Tags/Index.astro";
-import { PROJECTS } from "./Projects"
+
+interface Props {
+  data: {
+    title: string;
+    description: string[];
+    tags: string[];
+    url: string;
+    image?: string;
+  }[];
+}
+
+const { data } = Astro.props
 ---
-
-<h2 class="subtitle">proyectos</h2>
-
 <section class="flex flex-col gap-y-28">
 {
-  PROJECTS.map(({ title, description, url, image, tags }) => (
+  data.map(({ title, description, url, image, tags }) => (
     <article>
       <h1 class="text-2xl font-semibold text-accent">{title}</h1>
       

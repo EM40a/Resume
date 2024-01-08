@@ -1,4 +1,6 @@
-export const Experience = [
+---
+import TimeLine from '../../components/TimeLine/Index.astro'
+const EXPERIENCE = [
   {
     title: 'ACAP',
     link: { label: 'Kainos AR', url: 'https://kainos.com' },
@@ -10,3 +12,6 @@ export const Experience = [
     tags: ['XML', 'XSLT', 'Workday', 'Oxygen'],
   },
 ]
+---
+
+<TimeLine data={EXPERIENCE} />

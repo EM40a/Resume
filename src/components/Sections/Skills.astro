@@ -1,3 +1,5 @@
+---
+import Scroller from '../Scroller/Index.astro'
 const HTML_ICON = '/svgs/html5.svg'
 const CSS_ICON = '/svgs/css.svg'
 const JS_ICON = '/svgs/javascript.svg'
@@ -14,7 +16,7 @@ const DOTNET_ICON = '/svgs/dotnet.svg'
 const SQLSERVER_ICON = '/svgs/sqlserver.svg'
 const VISUALSTUDIO_ICON = '/svgs/visualstudio.svg'
 
-export const TECHNOLOGIES = [
+const SKILLS = [
   HTML_ICON,
   CSS_ICON,
   JS_ICON,
@@ -31,3 +33,6 @@ export const TECHNOLOGIES = [
   SQLSERVER_ICON,
   VISUALSTUDIO_ICON,
 ]
+---
+
+<Scroller speed='slow' direction='right' items={SKILLS} />
