@@ -23,11 +23,11 @@ const { title, subtitle, link, description, date, location, tags } = Astro.props
          dark:border-dark-blue-500 dark:bg-teal-400'>
 </div>
 
-<time class='text-sm font-normal leading-none text-light-blue-500'>
+<time class='text-sm font-normal leading-none text-light-blue-300'>
   {date},
 </time>
 
-<span class='text-sm font-normal leading-none text-light-blue-500'
+<span class='text-sm font-normal leading-none text-light-blue-300'
   >{location}</span
 >
 
@@ -46,6 +46,7 @@ const { title, subtitle, link, description, date, location, tags } = Astro.props
           {link.label}
 
           <Icon
+            aria-label="Open link in new tab"
             name='mdi:open-in-new'
             class='inline-flex size-3 align-text-top'
           />
@@ -55,11 +56,11 @@ const { title, subtitle, link, description, date, location, tags } = Astro.props
   }
 </h3>
 
-{subtitle && <h4 class='mb-4 text-sm text-gray-500'>{subtitle}</h4>}
+{subtitle && <h4 class='mb-4 text-sm text-light-blue-300'>{subtitle}</h4>}
 
 {
   description.map(paragraph => (
-    <p class='paragraph  text-gray-400'>{paragraph}</p>
+    <p class='paragraph text-gray-300'>{paragraph}</p>
   ))
 }
 

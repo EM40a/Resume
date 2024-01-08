@@ -18,17 +18,17 @@ const { data } = Astro.props
 {
   data.map(({ title, description, url, image, tags }) => (
     <article>
-      <h1 class="text-2xl font-semibold text-accent">{title}</h1>
+      <h1 class="text-2xl font-semibold text-light-blue-100">{title}</h1>
       
       {
         description.map((d) => (
-            <p class="paragraph mt-3">{d}</p>
+            <p class="paragraph mt-3 text-gray-300">{d}</p>
         ))
       }
 
       { 
         image &&
-        <figure class="mb-3 rounded-md bg-img-project bg-cover overflow-hidden">
+        <figure class="mb-3 rounded-md bg-img-project bg-cover overflow-hidden" aria-label='Background image'>
             <img
             loading="lazy"
             class="md:translate-x-28 md:translate-y-14 md:scale-125 transition-transform duration-300 ease-in-out hover:scale-100 hover:translate-x-0 hover:translate-y-0 min-h-80 object-contain"

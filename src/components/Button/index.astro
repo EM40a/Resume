@@ -15,5 +15,9 @@ const { href, target } = Astro.props
   rel='noopener noreferrer'
   class='h-12 inline-flex items-center justify-center px-8 text-sm font-medium border border-light-blue-300 rounded-lg hover:bg-teal-400/10 dark:text-accent'>
   <slot>Ver más...</slot>
-  <Icon name='mdi:arrow-right' class='animate-bounce-x ml-5' />
+  <Icon
+    aria-label='Open link in new tab'
+    name='mdi:arrow-right'
+    class='animate-bounce-x ml-5'
+  />
 </a>
