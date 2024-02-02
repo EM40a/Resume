@@ -1,0 +1,23 @@
+---
+import { Icon } from 'astro-icon/components'
+const { icons } = Astro.props
+---
+
+<ul>
+  {
+    icons.map(({ name, url }) => (
+      <a href={url} target='_blank' rel='noopener noreferrer'>
+        <Icon aria-label={name} class='size-8' name={name} />
+      </a>
+    ))
+  }
+</ul>
+<style>
+  ul {
+    @apply flex gap-x-3 my-8 w-fit;
+  }
+
+  a {
+    @apply transition-opacity duration-200 ease-in-out text-light-blue-100 opacity-75 hover:opacity-100;
+  }
+</style>

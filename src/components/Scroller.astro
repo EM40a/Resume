@@ -1,5 +1,4 @@
 ---
-import Item from './Item.astro'
 interface Props {
   direction?: 'left' | 'right'
   speed?: 'fast' | 'slow'
@@ -12,9 +11,20 @@ const { direction, speed, items } = Astro.props
 <div class='scroller' data-speed={speed} data-direction={direction}>
   <ul class='scroller-inner'>
     {
-      items.map(e => {
-        let title = e.split('/').pop().split('.')[0].toUpperCase() // remove the path and extension
-        return <Item title={title} src={e} />
+      items.map(({ name, src }) => {
+        return (
+          <figure
+            class='h-24 aspect-square rounded-md hover:border-2 hover:border-accent transition-transform ease-in-out duration-500 hover:bg-teal-300/20 relative'
+            aria-label={name}>
+            <img
+              loading='lazy'
+              src={src}
+              alt={name}
+              title={name}
+              class='size-full object-scale-down p-4'
+            />
+          </figure>
+        )
       })
     }
   </ul>

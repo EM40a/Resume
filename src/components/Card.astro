@@ -1,0 +1,54 @@
+---
+import Button from './Button.astro'
+import Tags from './Tags.astro'
+
+interface Props {
+  data: {
+    name: string
+    description: string[]
+    fullDate?: string
+    keywords: string[]
+    url: string
+    image?: string
+  }[]
+}
+
+const { data } = Astro.props
+---
+
+<section class='flex flex-col gap-y-28'>
+  {
+    data.map(({ name, description, url, image, keywords, fullDate }) => (
+      <article>
+        <div class='flex justify-between gap-x-2 flex-wrap'>
+          <h1 class='text-2xl font-semibold text-light-blue-100'>{name}</h1>
+          <time class='text-sm font-normal leading-none text-light-blue-300'>
+            {fullDate}
+          </time>
+        </div>
+        {description.map(p => (
+          <p class='paragraph mt-3 text-gray-300' set:html={p} />
+        ))}
+
+        {image && (
+          <figure
+            class='mb-3 rounded-md bg-img-project bg-cover overflow-hidden'
+            aria-label='Background image'>
+            <img
+              src={image}
+              title={url}
+              alt='Una descripción de mi imagen.'
+              loading='lazy'
+              class='md:translate-x-28 md:translate-y-14 md:scale-125 transition-transform duration-300 ease-in-out hover:scale-100 hover:translate-x-0 hover:translate-y-0 min-h-80 object-contain'
+            />
+          </figure>
+        )}
+
+        <div class='flex flex-col gap-4 items-stretch md:items-start'>
+          <Tags list={keywords} />
+          <Button href={url} />
+        </div>
+      </article>
+    ))
+  }
+</section>
