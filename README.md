@@ -32,13 +32,21 @@ No hay nada especial en `src/components/`, pero es donde nos gusta poner cualqui
 
 Cualquier archivo estático, como imágenes, puede colocarse en el directorio `public/`.
 
+# Get Started
+
+
+```bash
+pnpm dev # npm run dev - yarn dev
+```
+
 ### 📚 Recursos
 
 - [Documentación de Astro](https://docs.astro.build/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Esquema del JSON](https://jsonresume.org/schema/) 
 - [Repositorio AstroIcons](https://github.com/natemoo-re/astro-icon)
 - [Repositorio Svgl](https://github.com/pheralb/svgl)
 
 ---
 
-Recuerda que puedes ver el proyecto en 👉 [em40a.vercel.app](https://em40a-resume.vercel.app/)
+Recuerda que puedes ver el proyecto en 👉 [https://EM40A.vercel.app](https://em40a-resume.vercel.app/)
