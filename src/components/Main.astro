@@ -1,0 +1,36 @@
+---
+import {
+  basics,
+  work,
+  projects,
+  technologies,
+  education,
+} from '../../public/resume.json'
+import Card from '../components/Card.astro'
+import Scroller from '../components/Scroller.astro'
+import Section from '../components/Section.astro'
+import TimeLine from '../components/TimeLine.astro'
+const { summary } = basics
+---
+
+<main class='lg:w-1/2 lg:my-28 mb-16 flex flex-col gap-y-24'>
+  <Section subtitle='Acerca de'>
+    {summary.map(sum => <p class='paragraph' set:html={sum} />)}
+  </Section>
+
+  <Section subtitle='Experiencia'>
+    <TimeLine data={work} />
+  </Section>
+
+  <Section subtitle='Proyectos'>
+    <Card data={projects} />
+  </Section>
+
+  <Section subtitle='Tecnologías'>
+    <Scroller speed='slow' direction='right' items={technologies} />
+  </Section>
+
+  <Section subtitle='Educación'>
+    <TimeLine data={education} />
+  </Section>
+</main>

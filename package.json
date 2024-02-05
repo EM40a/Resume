@@ -1,0 +1,24 @@
+{
+  "name": "portafolio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.4",
+    "astro": "^4.1.1",
+    "astro-icon": "^1.0.2",
+    "framer-motion": "^10.17.9",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@iconify-json/ic": "^1.1.17",
+    "@iconify-json/mdi": "^1.1.64",
+    "prettier": "3.1.1"
+  }
+}

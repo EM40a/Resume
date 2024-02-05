@@ -1,0 +1,98 @@
+---
+interface Props {
+  direction?: 'left' | 'right'
+  speed?: 'fast' | 'slow'
+  items: any[]
+}
+
+const { direction, speed, items } = Astro.props
+---
+
+<div class='scroller' data-speed={speed} data-direction={direction}>
+  <ul class='scroller-inner'>
+    {
+      items.map(({ name, src }) => {
+        return (
+          <li tabindex=''>
+            <figure
+              class='h-24 aspect-square rounded-md hover:border-2 hover:border-accent transition-transform ease-in-out duration-500 hover:bg-teal-300/20 relative'
+              aria-label={name}>
+              <img
+                loading='lazy'
+                src={src}
+                alt={name}
+                title={name}
+                class='size-full object-scale-down p-4'
+              />
+            </figure>
+          </li>
+        )
+      })
+    }
+  </ul>
+</div>
+
+<style>
+  @keyframes scroll {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  /* With animations */
+  [data-animated='true']::before,
+  [data-animated='true']::after {
+    z-index: 15;
+    position: absolute;
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 10%;
+  }
+
+  [data-animated='true']::before {
+    background: linear-gradient(to left, transparent, #071221);
+    left: 0;
+  }
+
+  [data-animated='true']::after {
+    background: linear-gradient(to right, transparent, #071221);
+    right: 0;
+  }
+
+  [data-animated='true'] {
+    @apply overflow-hidden relative;
+  }
+
+  [data-animated='true'] .scroller-inner {
+    @apply flex gap-x-4 py-4 w-max;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+
+  [data-animated='true']:hover .scroller-inner {
+    animation-play-state: paused;
+  }
+
+  .scroller[data-direction='right'] {
+    --_animation-direction: forwards;
+  }
+
+  .scroller[data-direction='left'] {
+    --_animation-direction: reverse;
+  }
+
+  .scroller[data-speed='fast'] {
+    --_animation-duration: 10s;
+  }
+
+  .scroller[data-speed='slow'] {
+    --_animation-duration: 35s;
+  }
+  /* Without animations */
+  .scroller-inner {
+    @apply grid grid-cols-[repeat(auto-fit,_minmax(5rem,1fr))] gap-4;
+  }
+</style>
