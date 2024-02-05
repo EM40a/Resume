@@ -3,8 +3,12 @@
     "name": "Emanuel Hermosilla",
     "label": "Programador Full-Stack",
     "email": "hermosilla.emanuel811@gmail.com",
-    "phone": "1132783612",
+    "phone": "+54 9 11 3278-3612",
     "url": "https://em40a.vercel.app/",
+    "location": {
+      "country": "Argentina",
+      "city": "Buenos Aires"
+    },
     "summary": [
       "Comencé de forma autodidacta aprendiendo desarrollo web desde el <strong>Front-End</strong> con los principales lenguajes y tecnologías para desarrollar paginas webs.",
       "Actualmente soy estudiante de la <strong>Tecnicatura en Programación</strong> de la <b>UTN</b> donde me adentre de fondo en <strong>Back-End</strong>.",
@@ -140,5 +144,25 @@
       ],
       "keywords": ["Python", "MySQL", "Arduino", "Bootstrap"]
     }
+  ],
+    "languages": [
+    {
+      "language": "Ingles",
+      "fluency": "B1 | Escritura (Intermedio), Habla (Básico)"
+    },
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    }
+  ],
+  "interests": [
+    "Web Development",
+    "Front-End",
+    "Back-End",
+    "AI",
+    "UX",
+    "UI",
+    "Design System",
+    "Atomic Design"
   ]
 }
