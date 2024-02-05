@@ -1,12 +1,20 @@
-# Portafolio
+# 📄 Resume 
 
 Este es mi portafolio personal, donde muestro mis proyectos y habilidades.
 
-![Preview](public/Preview.webp)
+![Preview de la pagina](public/Preview.webp)
 
 Fue creado con [Astro](https://astro.build/), un nuevo marco de trabajo para construir sitios web modernos.
 
 También utilice [Tailwind CSS](https://tailwindcss.com/), un marco de trabajo CSS de utilidad de baja capa que le brinda todas las herramientas que necesita para construir componentes personalizados sin CSS.
+
+## ✅ Lighthouse Score
+
+<p align="center">
+  <a href="https://pagespeed.web.dev/analysis/https-em40a-vercel-app/y5wt0hmwvc?form_factor=desktop">
+    <img width="710" alt="AstroPaper Lighthouse Score" src="PageSpeed-Insights.svg">
+  <a>
+</p>
 
 ## 🚀 Estructura del Proyecto
 
@@ -33,7 +41,6 @@ No hay nada especial en `src/components/`, pero es donde nos gusta poner cualqui
 Cualquier archivo estático, como imágenes, puede colocarse en el directorio `public/`.
 
 # Get Started
-
 
 ```bash
 pnpm dev # npm run dev - yarn dev
