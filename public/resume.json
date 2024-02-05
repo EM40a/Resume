@@ -52,7 +52,7 @@
     {
       "name": "Portafolio",
       "fullDate": "Diciembre 2023 - Actualidad",
-      "description": [
+      "summary": [
         "Este es mi portafolio personal, donde muestro mis proyectos y habilidades.",
         "Esta página está hecha con Astro, un framework que genera páginas estáticas <b>sin JavaScript</b>."
       ],
@@ -69,7 +69,7 @@
     {
       "name": "CRUD: Reservas de hotel",
       "fullDate": "Octubre - Diciembre 2023",
-      "description": [
+      "summary": [
         "El segundo ejercicio integrador de Laboratorio II es sistema que debe permitir agregar tanto reservas como huéspedes a la base de datos del hotel."
       ],
       "keywords": [
@@ -86,7 +86,7 @@
     {
       "name": "Edenv - Cuidado al medio ambiente (SPA)",
       "fullDate": "Diciembre 2022 - Marzo 2023",
-      "description": [
+      "summary": [
         "Una <strong>Single Page Application</strong> sobre el cuidado del medio ambiente hecha con HTML, CSS y vanilla JavaScript. <b>Desarrolle esta página desde cero</b>, incluyendo su diseño, maquetación y conjunto de regla de estilos."
       ],
       "url": "https://edenv.vercel.app/",

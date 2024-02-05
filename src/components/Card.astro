@@ -5,7 +5,7 @@ import Tags from './Tags.astro'
 interface Props {
   data: {
     name: string
-    description: string[]
+    summary: string[]
     fullDate?: string
     keywords: string[]
     url: string
@@ -18,7 +18,7 @@ const { data } = Astro.props
 
 <section class='flex flex-col gap-y-28'>
   {
-    data.map(({ name, description, url, image, keywords, fullDate }) => (
+    data.map(({ name, summary, url, image, keywords, fullDate }) => (
       <article>
         <div class='flex justify-between gap-x-2 flex-wrap'>
           <h1 class='text-2xl font-semibold text-light-blue-100'>{name}</h1>
@@ -26,7 +26,7 @@ const { data } = Astro.props
             {fullDate}
           </time>
         </div>
-        {description.map(p => (
+        {summary.map(p => (
           <p class='paragraph mt-3 text-gray-300' set:html={p} />
         ))}
 
