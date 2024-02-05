@@ -6,9 +6,11 @@ const { icons } = Astro.props
 <ul>
   {
     icons.map(({ name, url }) => (
-      <a href={url} target='_blank' rel='noopener noreferrer'>
-        <Icon aria-label={name} class='size-8' name={name} />
-      </a>
+      <li>
+        <a href={url} target='_blank' rel='noopener noreferrer'>
+          <Icon aria-label={name} class='size-8' name={name} />
+        </a>
+      </li>
     ))
   }
 </ul>

@@ -13,17 +13,19 @@ const { direction, speed, items } = Astro.props
     {
       items.map(({ name, src }) => {
         return (
-          <figure
-            class='h-24 aspect-square rounded-md hover:border-2 hover:border-accent transition-transform ease-in-out duration-500 hover:bg-teal-300/20 relative'
-            aria-label={name}>
-            <img
-              loading='lazy'
-              src={src}
-              alt={name}
-              title={name}
-              class='size-full object-scale-down p-4'
-            />
-          </figure>
+          <li tabindex=''>
+            <figure
+              class='h-24 aspect-square rounded-md hover:border-2 hover:border-accent transition-transform ease-in-out duration-500 hover:bg-teal-300/20 relative'
+              aria-label={name}>
+              <img
+                loading='lazy'
+                src={src}
+                alt={name}
+                title={name}
+                class='size-full object-scale-down p-4'
+              />
+            </figure>
+          </li>
         )
       })
     }
