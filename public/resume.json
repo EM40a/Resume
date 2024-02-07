@@ -65,6 +65,7 @@
         "Tailwind CSS",
         "Content-first",
         "SEO",
+        "Accessibility",
         "Responsive Design"
       ],
       "url": "https://github.com/em40a/resume",
@@ -77,9 +78,8 @@
         "El segundo ejercicio integrador de Laboratorio II es sistema que debe permitir agregar tanto reservas como huéspedes a la base de datos del hotel."
       ],
       "keywords": [
-        "Python",
         "C#",
-        ".NET",
+        ".NET Framework",
         "SQL Server",
         "Entity Framework",
         "WinForms",
@@ -145,7 +145,7 @@
       "keywords": ["Python", "MySQL", "Arduino", "Bootstrap"]
     }
   ],
-    "languages": [
+  "languages": [
     {
       "language": "Ingles",
       "fluency": "B1 | Escritura (Intermedio), Habla (Básico)"
