@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/Hero.astro'
+import Sections from '../components/Main.astro'
+
+const URL = import.meta.env.URL
+const response = await fetch(URL)
+const data = await response.json()
+const { basics } = data
+---
+
+<Layout>
+  <div class='lg:px-24 lg:py-0 md:px-12 md:py-20'>
+    <div class='lg:flex lg:justify-between lg:gap-4 relative'>
+      <Hero {basics} />
+      <Sections {...data} />
+    </div>
+  </div>
+</Layout>

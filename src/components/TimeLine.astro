@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon/components'
+import Tags from './Tags.astro'
+
+const { data } = Astro.props
+---
+
+<ol class='relative border-s border-gray-200 dark:border-gray-500'>
+  {
+    data.map(({ fullDate, position, name, url, keywords, summary }) => (
+      <li class='mb-10 ms-4'>
+        <div class='absolute size-3 bg-light-blue-100 rounded-full mt-1.5 -start-1.5 dark:bg-teal-400' />
+
+        <time class='text-sm font-normal leading-none text-light-blue-300'>
+          {fullDate}
+        </time>
+
+        <h3 class='mt-2 text-lg font-semibold text-teal-300'>
+          {position}
+
+          {url && (
+            <>
+              <>|</>
+              <a
+                href={url}
+                target='_blank'
+                rel='noopener noreferrer'
+                class='hover:underline whitespace-nowrap'>
+                {name}
+
+                <Icon
+                  aria-label='Open link in new tab'
+                  name='mdi:open-in-new'
+                  class='inline-flex size-3 align-text-top'
+                />
+              </a>
+            </>
+          )}
+        </h3>
+
+        {summary.map(p => (
+          <p class='paragraph'>{p}</p>
+        ))}
+        {keywords && <Tags list={keywords} />}
+      </li>
+    ))
+  }
+</ol>
