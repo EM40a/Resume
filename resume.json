@@ -1,0 +1,168 @@
+{
+  "basics": {
+    "name": "Emanuel Hermosilla",
+    "label": "Programador Full-Stack",
+    "email": "hermosilla.emanuel811@gmail.com",
+    "phone": "+54 9 11 3278-3612",
+    "url": "https://em40a.vercel.app/",
+    "location": {
+      "country": "Argentina",
+      "city": "Buenos Aires"
+    },
+    "summary": [
+      "Comencé de forma autodidacta aprendiendo desarrollo web desde el <strong>Front-End</strong> con los principales lenguajes y tecnologías para desarrollar paginas webs.",
+      "Actualmente soy estudiante de la <strong>Tecnicatura en Programación</strong> de la <b>UTN</b> donde me adentre de fondo en <strong>Back-End</strong>.",
+      "Me gusta mucho aprender y experimentar con nuevas tecnologías, y siempre estoy en la búsqueda de nuevos desafíos. Estoy abierto a <strong>propuestas laborales</strong> y <strong>proyectos freelance</strong>."
+    ],
+    "icons": [
+      {
+        "name": "mdi:github",
+        "url": "https://github.com/em40a"
+      },
+      {
+        "name": "mdi:linkedin",
+        "url": "https://www.linkedin.com/in/em40a/"
+      },
+      {
+        "name": "ic:round-mail",
+        "url": "mailto:hermosilla.emanuel811@gmail.com"
+      },
+      {
+        "name": "ic:baseline-discord",
+        "url": "https://discord.com/users/541145291726913537"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Kainos AR",
+      "position": "ACAP",
+      "url": "https://kainos.com",
+      "fullDate": "Octubre 2022",
+      "summary": [
+        "Con el objetivo de acercarnos a la realidad de una empresa de desarrollo de software prendí las tecnologías y herramientas que utilizan en la empresa realizando practicas en equipo para resolver distintos desafíos."
+      ],
+      "keywords": [
+        "XML",
+        "XSLT",
+        "Workday",
+        "Oxygen",
+        "Employability",
+        "CoWork"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Portafolio",
+      "fullDate": "Diciembre 2023 - Actualidad",
+      "summary": [
+        "Este es mi portafolio personal, donde muestro mis proyectos y habilidades.",
+        "Esta página está hecha con Astro, un framework que genera páginas estáticas <b>sin JavaScript</b>."
+      ],
+      "keywords": [
+        "Astro Framework",
+        "Tailwind CSS",
+        "Content-first",
+        "SEO",
+        "Responsive Design"
+      ],
+      "url": "https://github.com/em40a/resume",
+      "image": "/projects/portfolio.webp"
+    },
+    {
+      "name": "CRUD: Reservas de hotel",
+      "fullDate": "Octubre - Diciembre 2023",
+      "summary": [
+        "El segundo ejercicio integrador de Laboratorio II es sistema que debe permitir agregar tanto reservas como huéspedes a la base de datos del hotel."
+      ],
+      "keywords": [
+        "Python",
+        "C#",
+        ".NET",
+        "SQL Server",
+        "Entity Framework",
+        "WinForms",
+        "Unit Tests"
+      ],
+      "url": "https://github.com/EM40a/Reserva-Ya"
+    },
+    {
+      "name": "Edenv - Cuidado al medio ambiente (SPA)",
+      "fullDate": "Diciembre 2022 - Marzo 2023",
+      "summary": [
+        "Una <strong>Single Page Application</strong> sobre el cuidado del medio ambiente hecha con HTML, CSS y vanilla JavaScript. <b>Desarrolle esta página desde cero</b>, incluyendo su diseño, maquetación y conjunto de regla de estilos."
+      ],
+      "url": "https://edenv.vercel.app/",
+      "image": "/projects/edenv.webp",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "SASS",
+        "Figma",
+        "Responsive Design"
+      ]
+    }
+  ],
+  "technologies": [
+    { "name": "HTML5", "src": "/svgs/html5.svg" },
+    { "name": "CSS3", "src": "/svgs/css.svg" },
+    { "name": "JavaScript ES6", "src": "/svgs/javascript.svg" },
+    { "name": "SASS", "src": "/svgs/sass.svg" },
+    { "name": "Tailwind CSS", "src": "/svgs/tailwindcss.svg" },
+    { "name": "React JS", "src": "/svgs/react.svg" },
+    { "name": "Vite JS", "src": "/svgs/vitejs.svg" },
+    { "name": "Python", "src": "/svgs/python.svg" },
+    { "name": "Git", "src": "/svgs/git.svg" },
+    { "name": "Figma", "src": "/svgs/figma.svg" },
+    { "name": "C#", "src": "/svgs/csharp.svg" },
+    { "name": "Astro Framework", "src": "/svgs/astro.svg" },
+    { "name": ".NET", "src": "/svgs/dotnet.svg" },
+    { "name": "SQL Server", "src": "/svgs/sqlserver.svg" },
+    { "name": "Visual Studio", "src": "/svgs/visualstudio.svg" }
+  ],
+  "education": [
+    {
+      "name": "Universidad Tecnológica Nacional (UTN)",
+      "position": "Tecnicatura en Programación",
+      "url": "https://fra.utn.edu.ar/",
+      "fullDate": "Feb. 2023 - Actualidad",
+      "summary": [
+        "Tuve la oportunidad de aprender sobre el desarrollo de software, bases de datos, entre otras cosas.",
+        "Ademas, pude conocer a grandes personas que me ayudaron a crecer y con las que pude trabajar en equipo para resolver distintos desafíos."
+      ],
+      "keywords": ["Python", "C#", ".NET Framework", "SQL Server"]
+    },
+    {
+      "name": "Colegio Cruz Del Sur",
+      "position": "Bachillerato en Informática",
+      "url": "https://www.linkedin.com/company/colegio-cruz-del-sur/",
+      "fullDate": "Mar. 2018 - Dic. 2022",
+      "summary": [
+        "El primer vistazo que tuve al mundo IT, donde aprendí las bases de la programación junto a las tecnologías de la información y comunicación (TIC)."
+      ],
+      "keywords": ["Python", "MySQL", "Arduino", "Bootstrap"]
+    }
+  ],
+    "languages": [
+    {
+      "language": "Ingles",
+      "fluency": "B1 | Escritura (Intermedio), Habla (Básico)"
+    },
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    }
+  ],
+  "interests": [
+    "Web Development",
+    "Front-End",
+    "Back-End",
+    "AI",
+    "UX",
+    "UI",
+    "Design System",
+    "Atomic Design"
+  ]
+}
