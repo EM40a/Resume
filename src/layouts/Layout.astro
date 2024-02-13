@@ -1,0 +1,81 @@
+---
+import { ViewTransitions } from 'astro:transitions'
+import Background from '../components/Background.astro'
+import Footer from '../components/Footer.astro'
+import MetaTags from '../components/MetaTags.astro'
+
+const {
+  title = 'EM40a - Desarrollador y Programador Full-Stack',
+  description = 'Soy un programador Full-Stack, con experiencia en el desarrollo de aplicaciones web. Me gusta aprender nuevas tecnologías y aplicarlas en mis proyectos. Soy un apasionado de la tecnología y me gusta estar al día con las últimas tendencias.',
+  img = '/Preview.webp',
+  url = Astro.url,
+} = Astro.props
+---
+
+<!doctype html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <MetaTags {...{ title, description, img, url }} />
+    <ViewTransitions />
+  </head>
+  <body class='bg-dark-blue-500' transition:persist>
+    <Background />
+
+    <div
+      class='mx-auto min-h-screen w-11/12 max-w-screen-xl'
+      transition:animate='slide'>
+      <slot />
+    </div>
+
+    <Footer />
+    <script type='module' src='/js/App.js'></script>
+    <style is:global>
+      @import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;500;700&display=swap');
+      *::before,
+      *::after {
+        @apply m-0 p-0 box-border;
+      }
+
+      :root {
+        color-scheme: light dark;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        body {
+          @apply scroll-auto;
+        }
+      }
+
+      html {
+        @apply font-Onest scroll-smooth text-white;
+      }
+
+      ::-webkit-scrollbar {
+        @apply bg-transparent rounded w-1;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        @apply bg-accent rounded;
+      }
+
+      ::selection {
+        @apply bg-accent text-dark-blue-500;
+      }
+
+      .subtitle {
+        @apply md:my-4 mb-4 uppercase text-lg text-light-blue-300 lg:text-xl text-balance tracking-wider;
+      }
+
+      .paragraph {
+        @apply font-normal text-pretty mb-4;
+      }
+
+      strong {
+        @apply text-accent font-bold;
+      }
+    </style>
+  </body>
+</html>

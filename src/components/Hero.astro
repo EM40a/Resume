@@ -1,0 +1,30 @@
+---
+import SocialMedia from '../components/MenuIcons.astro'
+
+const { name, label, icons } = Astro.props.basics
+---
+
+<header {...Astro.props}>
+  <h1>{name}</h1>
+
+  <h2 class='subtitle'>
+    {label}<strong>+</strong>
+  </h2>
+
+  <SocialMedia {icons} />
+</header>
+
+<style>
+  h1 {
+    @apply font-bold text-3xl uppercase animate-neon sm:text-5xl;
+    color: #2dffc4;
+  }
+
+  h1:not(:hover) {
+    animation-iteration-count: initial;
+  }
+
+  header {
+    @apply max-h-screen lg:sticky lg:top-0 lg:flex lg:w-1/2 lg:flex-col lg:justify-center lg:pb-24 pt-24;
+  }
+</style>
