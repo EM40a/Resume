@@ -77,13 +77,14 @@
         "El segundo ejercicio integrador de Laboratorio II es sistema que debe permitir agregar tanto reservas como huéspedes a la base de datos del hotel."
       ],
       "keywords": [
-        "Python",
         "C#",
         ".NET",
         "SQL Server",
         "Entity Framework",
         "WinForms",
-        "Unit Tests"
+        "Unit Tests",
+        "JSON",
+        "XML"
       ],
       "url": "https://github.com/EM40a/Reserva-Ya"
     },
