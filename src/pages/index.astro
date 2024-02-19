@@ -11,8 +11,8 @@ const { basics } = data
 
 <Layout>
   <div class='lg:px-24 lg:py-0 md:px-12 md:py-20'>
-    <div class='lg:flex lg:justify-between lg:gap-4 relative'>
-      <Hero {basics} />
+    <div class='lg:flex lg:justify-between lg:gap-4'>
+      <Hero {basics} class='lg:fixed top-0 left-0' />
       <Sections {...data} />
     </div>
   </div>

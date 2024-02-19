@@ -1,8 +1,8 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
 import Background from '../components/Background.astro'
-import Footer from '../components/Footer.astro'
 import MetaTags from '../components/MetaTags.astro'
+import { Icon } from 'astro-icon/components'
 
 const {
   title = 'EM40a - Desarrollador y Programador Full-Stack',
@@ -30,13 +30,29 @@ const {
   <body class='bg-dark-blue-500' transition:persist>
     <Background />
 
-    <div
-      class='mx-auto min-h-screen w-11/12 max-w-screen-xl'
-      transition:animate='slide'>
-      <slot />
+    <nav class='fixed top-0 w-full'>
+      <div class='py-4 w-11/12 mx-auto max-w-screen-xl flex justify-end'>
+        <a
+          href='https://github.com/em40a/resume'
+          target='_blank'
+          rel='noopener noreferrer'
+          class='opacity-75 hover:opacity-100'
+          title='Repositorio'>
+          <Icon
+            aria-label='Repositorio del portafolio'
+            class='size-6'
+            name={'mdi:github'}
+          />
+        </a>
+      </div>
+    </nav>
+
+    <div class='container max-w-screen-xl mx-auto w-11/12'>
+      <div transition:animate='slide'>
+        <slot />
+      </div>
     </div>
 
-    <Footer />
     <script type='module' src='/js/App.js'></script>
     <style is:global>
       *::before,

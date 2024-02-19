@@ -4,7 +4,7 @@ import SocialMedia from '../components/MenuIcons.astro'
 const { name, label, icons } = Astro.props.basics
 ---
 
-<header {...Astro.props}>
+<header {...Astro.props} class:list={[Astro.props.class]}>
   <h1>{name}</h1>
 
   <h2 class='subtitle'>
