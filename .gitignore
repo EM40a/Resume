@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # Visual Studio Code
 .vscode/
+
+# Ignore package for npm/yarn/pnpm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
