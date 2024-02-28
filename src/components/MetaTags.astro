@@ -6,7 +6,7 @@ interface Props {
   url: string | URL
 }
 
-const { title, description, img, url } = Astro.props
+const { title, description, img, url } = Astro.props as Props
 ---
 
 <!-- Primary Meta Tags -->

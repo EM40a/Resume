@@ -30,8 +30,8 @@ const {
   <body class='bg-dark-blue-500' transition:persist>
     <Background />
 
-    <nav class='fixed top-0 w-full'>
-      <div class='py-4 w-11/12 mx-auto max-w-screen-xl flex justify-end'>
+    <header class='md:fixed md:top-0 w-full'>
+      <nav class='py-4 flex justify-end w-11/12 mx-auto max-w-screen-xl'>
         <a
           href='https://github.com/em40a/resume'
           target='_blank'
@@ -40,20 +40,20 @@ const {
           title='Repositorio'>
           <Icon
             aria-label='Repositorio del portafolio'
-            class='size-6'
-            name={'mdi:github'}
+            class='size-8'
+            name='mdi:github'
           />
         </a>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <div class='container max-w-screen-xl mx-auto w-11/12'>
-      <div transition:animate='slide'>
-        <slot />
-      </div>
+    <div
+      class='container max-w-screen-xl mx-auto w-11/12'
+      transition:animate='slide'>
+      <slot />
     </div>
 
-    <script type='module' src='/js/App.js'></script>
+    <script type='module' src='/scripts/App.js'></script>
     <style is:global>
       *::before,
       *::after {

@@ -5,10 +5,13 @@ interface Props {
   subtitle: string
 }
 
-const { id, subtitle } = Astro.props
+const { id, subtitle } = Astro.props as Props
 ---
 
-<section id={id} {...Astro.props} class='flex flex-col'>
+<section
+  {id}
+  {...Astro.props}
+  class:list={['flex flex-col', Astro.props.class]}>
   <h2 class='subtitle'>{subtitle}</h2>
   <slot />
 </section>

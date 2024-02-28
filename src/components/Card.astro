@@ -13,44 +13,159 @@ interface Props {
   }[]
 }
 
-const { data } = Astro.props
+const { data } = Astro.props as Props
 ---
 
-<section class='flex flex-col gap-y-28'>
+<section class='flex flex-col gap-y-8'>
   {
-    data.map(({ name, summary, url, image, keywords, fullDate }) => (
-      <article>
-        <div class='flex justify-between gap-x-2 flex-wrap'>
-          <h1 class='text-2xl font-semibold text-light-blue-100'>{name}</h1>
-          <time class='text-sm font-normal leading-none text-light-blue-300'>
-            {fullDate}
-          </time>
-        </div>
-        {summary.map(p => (
-          <p class='paragraph mt-3 text-gray-300' set:html={p} />
-        ))}
+    data.map(({ name, summary, url, keywords, fullDate }) => (
+      <a
+        href={url}
+        target='_blank'
+        rel='noopener noreferrer'
+        aria-label={`Proyecto ${name}`}>
+        <article data-glow>
+          <div class='flex justify-between gap-x-2 flex-wrap'>
+            <h1 class='text-xl font-semibold text-light-blue-100'>{name}</h1>
+            <time class='text-sm font-normal leading-none text-light-blue-300'>
+              {fullDate}
+            </time>
+          </div>
+          {summary.map(p => (
+            <p class='paragraph mt-3 text-gray-300' set:html={p} />
+          ))}
 
-        {image && (
-          <figure
-            class='mb-3 rounded-md bg-img-project bg-cover overflow-hidden'
-            aria-label='Background image'>
-            <img
-              src={image}
-              title={url}
-              alt={name}
-              loading='lazy'
-              height='320'
-              width='100%'
-              class='md:translate-x-28 md:translate-y-14 md:scale-125 transition-transform duration-300 ease-in-out hover:scale-100 hover:translate-x-0 hover:translate-y-0 min-h-80 object-contain'
-            />
-          </figure>
-        )}
-
-        <div class='flex flex-col gap-4 items-stretch md:items-start'>
-          <Tags list={keywords} />
-          <Button href={url} />
-        </div>
-      </article>
+          <div class='flex flex-col gap-4 items-stretch md:items-start'>
+            <Tags list={keywords} />
+            <Button href={url} />
+          </div>
+        </article>
+      </a>
     ))
   }
 </section>
+
+<style>
+  :root {
+    --radius: 12;
+    --border: 3;
+    --backup-border: hsl(0 0% 60% / 0.12);
+    --size: 200;
+  }
+
+  article:first-of-type {
+    --base: 80;
+    --spread: 500;
+    --outer: 1;
+  }
+  article:last-of-type {
+    --outer: 1;
+    --base: 220;
+    --spread: 200;
+  }
+
+  article {
+    padding: 1rem;
+    border-radius: calc(var(--radius) * 1px);
+  }
+
+  /* Glow specific styles */
+  [data-glow] {
+    --border-size: calc(var(--border, 2) * 1px);
+    --spotlight-size: calc(var(--size, 150) * 1px);
+    --hue: calc(var(--base) + (var(--xp, 0) * var(--spread, 0)));
+    background-image: radial-gradient(
+      var(--spotlight-size) var(--spotlight-size) at calc(var(--x, 0) * 1px)
+        calc(var(--y, 0) * 1px),
+      hsl(
+        var(--hue, 210) calc(var(--saturation, 100) * 1%)
+          calc(var(--lightness, 70) * 1%) / var(--bg-spot-opacity, 0.1)
+      ),
+      transparent
+    );
+    background-size: calc(100% + (2 * var(--border-size)))
+      calc(100% + (2 * var(--border-size)));
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    border: var(--border-size) solid var(--backup-border);
+    position: relative;
+    touch-action: none;
+  }
+
+  [data-glow]::before,
+  [data-glow]::after {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    inset: calc(var(--border-size) * -1);
+    border: var(--border-size) solid transparent;
+    border-radius: calc(var(--radius) * 1px);
+    background-attachment: fixed;
+    background-size: calc(100% + (2 * var(--border-size)))
+      calc(100% + (2 * var(--border-size)));
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    mask: linear-gradient(transparent, transparent),
+      linear-gradient(white, white);
+    mask-clip: padding-box, border-box;
+    mask-composite: intersect;
+  }
+
+  /* This is the emphasis light */
+  [data-glow]::before {
+    background-image: radial-gradient(
+      calc(var(--spotlight-size) * 0.75) calc(var(--spotlight-size) * 0.75) at
+        calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
+      hsl(
+        var(--hue, 210) calc(var(--saturation, 100) * 1%)
+          calc(var(--lightness, 50) * 1%) / var(--border-spot-opacity, 1)
+      ),
+      transparent 100%
+    );
+    filter: brightness(2);
+  }
+  /* This is the spotlight */
+  [data-glow]::after {
+    background-image: radial-gradient(
+      calc(var(--spotlight-size) * 0.5) calc(var(--spotlight-size) * 0.5) at
+        calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
+      hsl(0 100% 100% / var(--border-light-opacity, 1)),
+      transparent 100%
+    );
+  }
+  [data-glow] [data-glow] {
+    position: absolute;
+    inset: 0;
+    will-change: filter;
+    opacity: var(--outer, 1);
+  }
+  [data-glow] > [data-glow] {
+    border-radius: calc(var(--radius) * 1px);
+    border-width: calc(var(--border-size) * 20);
+    filter: blur(calc(var(--border-size) * 10));
+    background: none;
+    pointer-events: none;
+  }
+  [data-glow] > [data-glow]::before {
+    inset: -10px;
+    border-width: 10px;
+  }
+  [data-glow] [data-glow] {
+    border: none;
+  }
+</style>
+
+<script>
+  document.body.addEventListener('pointermove', ({ x, y }) => {
+    document.documentElement.style.setProperty('--x', x.toFixed(2))
+    document.documentElement.style.setProperty(
+      '--xp',
+      (x / window.innerWidth).toFixed(2)
+    )
+    document.documentElement.style.setProperty('--y', y.toFixed(2))
+    document.documentElement.style.setProperty(
+      '--yp',
+      (y / window.innerHeight).toFixed(2)
+    )
+  })
+</script>
