@@ -54,11 +54,26 @@
   ],
   "projects": [
     {
+      "name": "Landing Envío Propuestas",
+      "fullDate": "Febrero 2024",
+      "summary": [
+        "Fue un proyecto <strong>open source</strong> por y para la comunidad de <strong>Punto&Coma</strong> en discord.",
+        "Es una pequeña <strong>landing page</strong> que recibe una propuesta para hacer en la comunidad."
+      ],
+      "keywords": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Responsive Design"
+      ],
+      "url": "https://landing-envio-propuestas-ten.vercel.app/"
+    },
+    {
       "name": "Portafolio",
       "fullDate": "Diciembre 2023 - Actualidad",
       "summary": [
-        "Este es mi portafolio personal, donde muestro mis proyectos y habilidades.",
-        "Esta página está hecha con Astro, un framework que genera páginas estáticas <b>sin JavaScript</b>."
+        "Es completamente <strong>responsive</strong> ademas de ser un sitio <strong>content-first</strong>.",
+        "También cuenta con un <strong>100% de <a class='underline' href='https://pagespeed.web.dev/analysis/https-em40a-vercel-app/y5wt0hmwvc?form_factor=desktop' target='_blank' rel='noopener noreferrer'>lighthouse score</a></strong>, lo que significa que es <strong>SEO friendly</strong> y <strong>accesible</strong>."
       ],
       "keywords": [
         "Astro Framework",
@@ -67,8 +82,7 @@
         "SEO",
         "Responsive Design"
       ],
-      "url": "https://github.com/em40a/resume",
-      "image": "/projects/portfolio.webp"
+      "url": "https://github.com/em40a/resume"
     },
     {
       "name": "CRUD: Reservas de hotel",
@@ -89,13 +103,12 @@
       "url": "https://github.com/EM40a/Reserva-Ya"
     },
     {
-      "name": "Edenv - Cuidado al medio ambiente (SPA)",
-      "fullDate": "Diciembre 2022 - Marzo 2023",
+      "name": "Edenv SPA",
+      "fullDate": "Dic. 2022 - Mar. 2023",
       "summary": [
         "Una <strong>Single Page Application</strong> sobre el cuidado del medio ambiente hecha con HTML, CSS y vanilla JavaScript. <b>Desarrolle esta página desde cero</b>, incluyendo su diseño, maquetación y conjunto de regla de estilos."
       ],
       "url": "https://edenv.vercel.app/",
-      "image": "/projects/edenv.webp",
       "keywords": [
         "HTML5",
         "CSS3",
@@ -146,7 +159,7 @@
       "keywords": ["Python", "MySQL", "Arduino", "Bootstrap"]
     }
   ],
-    "languages": [
+  "languages": [
     {
       "language": "Ingles",
       "fluency": "B1 | Escritura (Intermedio), Habla (Básico)"
