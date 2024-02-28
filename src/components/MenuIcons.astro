@@ -3,11 +3,15 @@ import { Icon } from 'astro-icon/components'
 const { icons } = Astro.props
 ---
 
-<ul>
+<ul role='list'>
   {
     icons.map(({ name, url }) => (
-      <li>
-        <a href={url} target='_blank' rel='noopener noreferrer'>
+      <li role='listitem'>
+        <a
+          href={url}
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label={name}>
           <Icon aria-label={name} class='size-8' name={name} />
         </a>
       </li>
