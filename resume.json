@@ -73,7 +73,7 @@
       "fullDate": "Diciembre 2023",
       "summary": [
         "Es completamente <strong>responsive</strong> ademas de ser un sitio <strong>content-first</strong>.",
-        "También cuenta con un <strong>100% de <a  style='text-decoration: underline;' href='https://pagespeed.web.dev/analysis/https-em40a-vercel-app/y5wt0hmwvc?form_factor=desktop' target='_blank' rel='noopener noreferrer'>lighthouse score</a></strong>, lo que significa que es <strong>SEO friendly</strong> y <strong>accesible</strong>."
+        "También cuenta con un <strong>100% de lighthouse score</strong>, lo que significa que es <strong>SEO friendly</strong> y <strong>accesible</strong>."
       ],
       "keywords": [
         "Astro Framework",
@@ -82,7 +82,8 @@
         "SEO",
         "Responsive Design"
       ],
-      "url": "https://github.com/em40a/resume"
+      "url": "https://github.com/em40a/resume",
+      "lightHouse": "https://pagespeed.web.dev/analysis/https-em40a-vercel-app/y5wt0hmwvc?form_factor=desktop"
     },
     {
       "name": "Reservas de hotel",
