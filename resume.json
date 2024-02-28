@@ -57,8 +57,8 @@
       "name": "Landing Envío Propuestas",
       "fullDate": "Febrero 2024",
       "summary": [
-        "Fue un proyecto <strong>open source</strong> por y para la comunidad de <strong>Punto&Coma</strong> en discord.",
-        "Es una pequeña <strong>landing page</strong> que recibe una propuesta para hacer en la comunidad."
+        "Fue un proyecto <strong>open source</strong> por y para la comunidad de <strong>Punto&Coma</strong>.",
+        "Es una pequeña <strong>landing page</strong> que recibe una propuesta para hacer a través del discord de la comunidad."
       ],
       "keywords": [
         "Next.js",
@@ -70,10 +70,10 @@
     },
     {
       "name": "Portafolio",
-      "fullDate": "Diciembre 2023 - Actualidad",
+      "fullDate": "Diciembre 2023",
       "summary": [
         "Es completamente <strong>responsive</strong> ademas de ser un sitio <strong>content-first</strong>.",
-        "También cuenta con un <strong>100% de <a class='underline' href='https://pagespeed.web.dev/analysis/https-em40a-vercel-app/y5wt0hmwvc?form_factor=desktop' target='_blank' rel='noopener noreferrer'>lighthouse score</a></strong>, lo que significa que es <strong>SEO friendly</strong> y <strong>accesible</strong>."
+        "También cuenta con un <strong>100% de <a  style='text-decoration: underline;' href='https://pagespeed.web.dev/analysis/https-em40a-vercel-app/y5wt0hmwvc?form_factor=desktop' target='_blank' rel='noopener noreferrer'>lighthouse score</a></strong>, lo que significa que es <strong>SEO friendly</strong> y <strong>accesible</strong>."
       ],
       "keywords": [
         "Astro Framework",
@@ -85,8 +85,8 @@
       "url": "https://github.com/em40a/resume"
     },
     {
-      "name": "CRUD: Reservas de hotel",
-      "fullDate": "Octubre - Diciembre 2023",
+      "name": "Reservas de hotel",
+      "fullDate": "Oct. - Dic. 2023",
       "summary": [
         "El segundo ejercicio integrador de Laboratorio II es sistema que debe permitir agregar tanto reservas como huéspedes a la base de datos del hotel."
       ],
@@ -146,7 +146,7 @@
         "Tuve la oportunidad de aprender sobre el desarrollo de software, bases de datos, entre otras cosas.",
         "Ademas, pude conocer a grandes personas que me ayudaron a crecer y con las que pude trabajar en equipo para resolver distintos desafíos."
       ],
-      "keywords": ["Python", "C#", ".NET Framework", "SQL Server"]
+      "keywords": ["Python", "Arduino", "C#", ".NET Framework", "SQL Server"]
     },
     {
       "name": "Colegio Cruz Del Sur",
@@ -156,7 +156,7 @@
       "summary": [
         "El primer vistazo que tuve al mundo IT, donde aprendí las bases de la programación junto a las tecnologías de la información y comunicación (TIC)."
       ],
-      "keywords": ["Python", "MySQL", "Arduino", "Bootstrap"]
+      "keywords": ["Python", "MySQL", "Arduino", "Desarrollo Web", "Bootstrap"]
     }
   ],
   "languages": [
@@ -177,6 +177,7 @@
     "UX",
     "UI",
     "Design System",
-    "Atomic Design"
+    "Atomic Design",
+    "Open Source"
   ]
 }
