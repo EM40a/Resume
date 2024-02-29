@@ -11,7 +11,7 @@ También utilice [Tailwind CSS](https://tailwindcss.com/), un marco de trabajo C
 ## ✅ Lighthouse Score
 
 <p align="center">
-  <a href="https://pagespeed.web.dev/analysis/https-em40a-vercel-app/y5wt0hmwvc?form_factor=desktop">
+  <a href="https://pagespeed.web.dev/analysis/https-em40a-vercel-app/g9r8ayko20?form_factor=mobile">
     <img width="710" alt="AstroPaper Lighthouse Score" src="PageSpeed-Insights.svg">
   <a>
 </p>
@@ -54,8 +54,8 @@ Ejecutar el servidor de desarrollo:
 pnpm dev # npm run dev - yarn dev
 ```
 
-Open http://localhost:4321 with your browser to see the result.
+Abrí `http://localhost:4321` en tu navegador para ver los resultados.
 
 ---
 
-Recuerda que puedes ver el proyecto en 👉 [https://EM40A.vercel.app](https://em40a-resume.vercel.app/)
+Recuerda que puedes ver el proyecto en 👉 [https://EM40A.vercel.app](https://em40a.vercel.app/)
