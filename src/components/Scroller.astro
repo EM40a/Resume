@@ -1,33 +1,35 @@
 ---
 interface Props {
-  direction?: 'left' | 'right'
-  speed?: 'fast' | 'slow'
-  items: any[]
+  'data-direction'?: 'left' | 'right'
+  'data-speed'?: 'fast' | 'slow'
+  items: { name: string; src: string }[]
 }
 
-const { direction, speed, items } = Astro.props
+const {
+  'data-direction': direction = 'left',
+  'data-speed': speed = 'slow',
+  items,
+} = Astro.props as Props
 ---
 
 <div class='scroller' data-speed={speed} data-direction={direction}>
-  <ul class='scroller-inner'>
+  <ul class='scroller-inner' role='listitem'>
     {
-      items.map(({ name, src }) => {
-        return (
-          <li tabindex=''>
-            <figure
-              class='h-24 aspect-square rounded-md hover:border-2 hover:border-accent transition-transform ease-in-out duration-500 hover:bg-teal-300/20 relative'
-              aria-label={name}>
-              <img
-                loading='lazy'
-                src={src}
-                alt={name}
-                title={name}
-                class='size-full object-scale-down p-4'
-              />
-            </figure>
-          </li>
-        )
-      })
+      items.map(({ name, src }) => (
+        <li role='listitem'>
+          <figure
+            class='h-24 aspect-square rounded-md hover:border-2 hover:border-accent transition-transform ease-in-out duration-500 hover:bg-teal-300/20'
+            aria-label={name}>
+            <img
+              loading='lazy'
+              src={src}
+              alt={name}
+              title={name}
+              class='size-full object-scale-down p-4'
+            />
+          </figure>
+        </li>
+      ))
     }
   </ul>
 </div>
@@ -44,12 +46,7 @@ const { direction, speed, items } = Astro.props
   /* With animations */
   [data-animated='true']::before,
   [data-animated='true']::after {
-    z-index: 15;
-    position: absolute;
-    content: '';
-    top: 0;
-    height: 100%;
-    width: 10%;
+    @apply z-20 absolute top-0 h-full w-[10%] content-none;
   }
 
   [data-animated='true']::before {
@@ -67,7 +64,7 @@ const { direction, speed, items } = Astro.props
   }
 
   [data-animated='true'] .scroller-inner {
-    @apply flex gap-x-4 py-4 w-max;
+    @apply flex py-4 w-max;
     animation: scroll var(--_animation-duration, 40s)
       var(--_animation-direction, forwards) linear infinite;
   }

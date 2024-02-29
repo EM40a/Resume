@@ -1,15 +1,18 @@
 ---
 interface Props {
   list: string[]
+  class?: string
 }
 
-const { list } = Astro.props
+const { list } = Astro.props as Props as Props
 ---
 
-<ul class='flex flex-wrap gap-2' aria-label='Tecnologías usadas'>
+<ul
+  class:list={['flex flex-wrap gap-2 cursor-default', Astro.props.class]}
+  aria-label='Tecnologías usadas'>
   {
     list.map(tag => (
-      <li class='cursor-default px-3 py-1 text-xs font-medium leading-5 rounded-full bg-teal-400/10 text-accent transition'>
+      <li class='px-3 py-1 text-xs font-medium leading-5 rounded-full bg-teal-400/10 text-accent transition'>
         {tag}
       </li>
     ))
