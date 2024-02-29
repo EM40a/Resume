@@ -3,6 +3,7 @@ import { ViewTransitions } from 'astro:transitions'
 import Background from '../components/Background.astro'
 import MetaTags from '../components/MetaTags.astro'
 import { Icon } from 'astro-icon/components'
+import '@fontsource-variable/geologica'
 
 const {
   title = 'EM40a - Desarrollador y Programador Full-Stack',
@@ -20,12 +21,6 @@ const {
     <meta name='generator' content={Astro.generator} />
     <MetaTags {...{ title, description, img, url }} />
     <ViewTransitions />
-    <link rel='preconnect' href='https://fonts.googleapis.com' />
-    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-    <link
-      href='https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap'
-      rel='stylesheet'
-    />
   </head>
   <body class='bg-dark-blue-500' transition:persist>
     <Background />
@@ -55,11 +50,6 @@ const {
 
     <script type='module' src='/scripts/App.js'></script>
     <style is:global>
-      *::before,
-      *::after {
-        @apply m-0 p-0 box-border;
-      }
-
       :root {
         color-scheme: light dark;
       }
@@ -71,7 +61,7 @@ const {
       }
 
       html {
-        @apply font-Onest scroll-smooth text-white;
+        @apply scroll-smooth font-Geologica text-white;
       }
 
       ::-webkit-scrollbar {

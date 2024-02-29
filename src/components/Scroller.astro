@@ -13,10 +13,10 @@ const {
 ---
 
 <div class='scroller' data-speed={speed} data-direction={direction}>
-  <ul class='scroller-inner' role='listitem'>
+  <ul class='scroller-inner'>
     {
       items.map(({ name, src }) => (
-        <li role='listitem'>
+        <li>
           <figure
             class='h-24 aspect-square rounded-md hover:border-2 hover:border-accent transition-transform ease-in-out duration-500 hover:bg-teal-300/20'
             aria-label={name}>
