@@ -17,7 +17,7 @@ export default {
         },
       },
       fontFamily: {
-        Onest: ['Onest', 'system-ui', 'sans-serif'],
+        Geologica: ['Geologica Variable', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         neon: {
