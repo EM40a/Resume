@@ -107,7 +107,7 @@
       "name": "Edenv SPA",
       "fullDate": "Dic. 2022 - Mar. 2023",
       "summary": [
-        "Una <strong>Single Page Application</strong> sobre el cuidado del medio ambiente hecha con HTML, CSS y vanilla JavaScript. <b>Desarrolle esta página desde cero</b>, incluyendo su diseño, maquetación y conjunto de regla de estilos."
+        "Una <strong>Single Page Application</strong> sobre el cuidado del medio ambiente hecha con <strong>HTML, CSS y vanilla JavaScript</strong>. <b>Desarrolle esta página desde cero</b>, incluyendo su diseño, maquetación y conjunto de regla de estilos."
       ],
       "url": "https://edenv.vercel.app/",
       "keywords": [
