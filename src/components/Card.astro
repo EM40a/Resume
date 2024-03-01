@@ -46,7 +46,6 @@ const { data } = Astro.props as Props
   :root {
     --radius: 12;
     --border: 3;
-    --backup-border: hsl(0 0% 60% / 0.12);
     --size: 200;
   }
 
@@ -84,7 +83,6 @@ const { data } = Astro.props as Props
       calc(100% + (2 * var(--border-size)));
     background-position: 50% 50%;
     background-attachment: fixed;
-    border: var(--border-size) solid var(--backup-border);
     position: relative;
     touch-action: none;
   }
