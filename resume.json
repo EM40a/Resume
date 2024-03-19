@@ -54,19 +54,21 @@
   ],
   "projects": [
     {
-      "name": "Landing Envío Propuestas",
-      "fullDate": "Febrero 2024",
+      "name": "Punto&Coma Website",
+      "fullDate": "Febrero - Marzo 2024",
       "summary": [
-        "Fue un proyecto <strong>open source</strong> por y para la comunidad de <strong>Punto&Coma</strong>.",
-        "Es una pequeña <strong>landing page</strong> que recibe una propuesta para hacer a través del discord de la comunidad."
+        "Fue un proyecto <strong>open source</strong> por y para la comunidad de <strong>Punto&Coma</strong>. Donde soy uno de los principales colaboradores. También ayude en la <b>UI</b> de la web utilizando las <b>mejores practicas</b>.",
+        "<b>+1700 miembros +3 proyectos activos +5 proyectos en desarrollo</b>"
       ],
       "keywords": [
-        "Next.js",
+        "Astro Framework",
         "Tailwind CSS",
         "TypeScript",
-        "Responsive Design"
+        "JavaScript ES6",
+        "Responsive Design",
+        "Figma"
       ],
-      "url": "https://landing-envio-propuestas-ten.vercel.app/"
+      "url": "https://punto-coma.vercel.app/"
     },
     {
       "name": "Portafolio",
