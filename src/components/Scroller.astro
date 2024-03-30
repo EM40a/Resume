@@ -46,7 +46,8 @@ const {
   /* With animations */
   [data-animated='true']::before,
   [data-animated='true']::after {
-    @apply z-20 absolute top-0 h-full w-[10%] content-none;
+    content: '';
+    @apply z-20 absolute top-0 h-full w-[10%];
   }
 
   [data-animated='true']::before {
