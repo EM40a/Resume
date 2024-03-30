@@ -1,5 +1,4 @@
 ---
-import Button from './Button.astro'
 import Tags from './Tags.astro'
 
 interface Props {
@@ -24,7 +23,7 @@ const { data } = Astro.props as Props
         target='_blank'
         rel='noopener noreferrer'
         aria-label={`Proyecto ${name}`}>
-        <article data-glow>
+        <article data-glow class='md:touch-none'>
           <div class='flex justify-between gap-x-2 flex-wrap'>
             <h1 class='text-xl font-semibold text-light-blue-100'>{name}</h1>
             <time class='text-sm font-normal leading-none text-light-blue-300'>
@@ -84,7 +83,6 @@ const { data } = Astro.props as Props
     background-position: 50% 50%;
     background-attachment: fixed;
     position: relative;
-    touch-action: none;
   }
 
   [data-glow]::before,

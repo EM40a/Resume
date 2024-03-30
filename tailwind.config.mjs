@@ -3,6 +3,9 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      width: {
+        '8/9': '88.88%',
+      },
       colors: {
         accent: '#7de2d1',
         'dark-blue': {
