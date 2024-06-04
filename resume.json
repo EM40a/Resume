@@ -12,7 +12,7 @@
     "summary": [
       "Comencé de forma autodidacta aprendiendo desarrollo web desde el <strong>Front-End</strong> con los principales lenguajes y tecnologías para desarrollar paginas webs.",
       "Actualmente soy estudiante de la <strong>Tecnicatura en Programación</strong> de la <b>UTN</b> donde me adentre de fondo en <strong>Back-End</strong>.",
-      "Me gusta mucho aprender y experimentar con nuevas tecnologías, y siempre estoy en la búsqueda de nuevos desafíos. Estoy abierto a <strong>propuestas laborales</strong> y <strong>proyectos freelance</strong>."
+      "Me gusta mucho aprender y experimentar con nuevas tecnologías, y siempre estoy en la búsqueda de nuevos desafíos."
     ],
     "icons": [
       {
@@ -128,8 +128,6 @@
     { "name": "JavaScript ES6", "src": "/svgs/javascript.svg" },
     { "name": "SASS", "src": "/svgs/sass.svg" },
     { "name": "Tailwind CSS", "src": "/svgs/tailwindcss.svg" },
-    { "name": "React JS", "src": "/svgs/react.svg" },
-    { "name": "Vite JS", "src": "/svgs/vitejs.svg" },
     { "name": "Python", "src": "/svgs/python.svg" },
     { "name": "Git", "src": "/svgs/git.svg" },
     { "name": "Figma", "src": "/svgs/figma.svg" },
@@ -149,7 +147,14 @@
         "Tuve la oportunidad de aprender sobre el desarrollo de software, bases de datos, entre otras cosas.",
         "Ademas, pude conocer a grandes personas que me ayudaron a crecer y con las que pude trabajar en equipo para resolver distintos desafíos."
       ],
-      "keywords": ["Python", "Arduino", "C#", ".NET Framework", "SQL Server"]
+      "keywords": [
+        "Python",
+        "C#",
+        ".NET Framework",
+        "SQL Server",
+        "PHP",
+        "Postman"
+      ]
     },
     {
       "name": "Colegio Cruz Del Sur",
