@@ -40,16 +40,9 @@
       "url": "https://kainos.com",
       "fullDate": "Octubre 2022",
       "summary": [
-        "Con el objetivo de acercarnos a la realidad de una empresa de desarrollo de software prendí las tecnologías y herramientas que utilizan en la empresa realizando practicas en equipo para resolver distintos desafíos."
+        "Con el objetivo de acercarnos a la realidad de una empresa de desarrollo de software aprendí las tecnologías y herramientas que utilizan en la empresa realizando practicas en equipo para resolver distintos desafíos."
       ],
-      "keywords": [
-        "XML",
-        "XSLT",
-        "Workday",
-        "Oxygen",
-        "Employability",
-        "CoWork"
-      ]
+      "keywords": ["XML", "XSLT", "Workday", "Oxygen", "Employability"]
     }
   ],
   "projects": [
@@ -186,6 +179,7 @@
     "UI",
     "Design System",
     "Atomic Design",
-    "Open Source"
+    "Open Source",
+    "SEO"
   ]
 }
