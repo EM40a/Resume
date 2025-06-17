@@ -38,8 +38,8 @@ const { data } = Astro.props
           )}
         </h3>
 
-        {summary.map(p => (
-          <p class='paragraph'>{p}</p>
+        {summary.map((p: string) => (
+          <p class='paragraph' set:html={p} />
         ))}
         {keywords && <Tags list={keywords} />}
       </li>
