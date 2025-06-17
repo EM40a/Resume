@@ -10,8 +10,8 @@
       "city": "Buenos Aires"
     },
     "summary": [
-      "Me interesa el desarrollo de aplicaciones centradas en el usuario.  Soy curioso, autodidacta y me gusta resolver problemas con código.",
-      "Actualmente me desempeño como Analista Funcional en el sector financiero, donde participo en la definición de reglas de negocio e integración de sistemas bancarios",
+      "Me interesa el desarrollo de aplicaciones <strong>centradas en el usuario</strong>.  Soy curioso, autodidacta y me gusta <strong>resolver problemas</strong> con código.",
+      "Actualmente me desempeño como <strong>Analista Funcional</strong> en el <strong>sector financiero</strong>, donde participo en la definición de <strong>reglas de negocio</strong> e <strong>integración de sistemas bancarios</strong>",
       "Me gusta mucho aprender y experimentar con nuevas tecnologías, y siempre estoy en la búsqueda de nuevos desafíos."
     ],
     "icons": [
@@ -40,11 +40,11 @@
       "url": "https://accionpoint.com/",
       "fullDate": "Abr 2024 - Actualidad",
       "summary": [
-        "Implementación del <strong>Core Bancario Bantotal</strong> en el <b>Banco de Santiago del Estero (BSE)</b> desde el frente de <b>Interfaces</b>.",
-        "Relevamiento y análisis de <b>reglas de negocio</b> vinculadas a procesos <b>financieros</b>, <b>operativos</b> y <b>normativos</b> del cliente.",
-        "Diseño y ejecución de <b>pruebas funcionales</b> para validar <b>integraciones</b> y <b>procesos</b>.",
-        "Interacción diaria con <b>equipos técnicos</b> y <b>usuarios clave</b> para asegurar el correcto funcionamiento de las <b>interfaces</b> del sistema.",
-        "Colaboración con <b>stakeholders</b> para alinear las <b>soluciones implementadas</b> con los <b>objetivos del negocio</b>."
+        "Implementación del <b>Core Bancario Bantotal</b> en el <strong>Banco de Santiago del Estero (BSE)</strong> desde el frente de <b>Interfaces</b>.",
+        "<li>Relevamiento y análisis de <b>reglas de negocio</b> vinculadas a procesos <b>financieros</b>, <b>operativos</b> y <b>normativos</b> del cliente.</li>",
+        "<li>Diseño y ejecución de <strong>pruebas funcionales</strong> para validar <strong>integraciones</strong> y <strong>procesos</strong>.</li>",
+        "<li>Interacción diaria con <strong>equipos técnicos</strong> y <strong>usuarios clave</strong> para asegurar el correcto funcionamiento de las <b>interfaces</b> del sistema.</li>",
+        "<li>Colaboración con <b>stakeholders</b> para alinear las <strong>soluciones implementadas</strong> con los <strong>objetivos del negocio</strong>.</li>"
       ],
       "keywords": [
         "Bantotal",
