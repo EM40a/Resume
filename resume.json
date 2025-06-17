@@ -10,8 +10,8 @@
       "city": "Buenos Aires"
     },
     "summary": [
-      "Comencé de forma autodidacta aprendiendo desarrollo web desde el <strong>Front-End</strong> con los principales lenguajes y tecnologías para desarrollar paginas webs.",
-      "Actualmente soy estudiante de la <strong>Tecnicatura en Programación</strong> de la <b>UTN</b> donde me adentre de fondo en <strong>Back-End</strong>.",
+      "Me interesa el desarrollo de aplicaciones centradas en el usuario.  Soy curioso, autodidacta y me gusta resolver problemas con código.",
+      "Actualmente me desempeño como Analista Funcional en el sector financiero, donde participo en la definición de reglas de negocio e integración de sistemas bancarios",
       "Me gusta mucho aprender y experimentar con nuevas tecnologías, y siempre estoy en la búsqueda de nuevos desafíos."
     ],
     "icons": [
@@ -35,17 +35,46 @@
   },
   "work": [
     {
-      "name": "Kainos AR",
-      "position": "ACAP",
-      "url": "https://kainos.com",
-      "fullDate": "Octubre 2022",
+      "name": "Accion Point",
+      "position": "Analista Funcional Trainee",
+      "url": "https://accionpoint.com/",
+      "fullDate": "Abr 2024 - Actualidad",
       "summary": [
-        "Con el objetivo de acercarnos a la realidad de una empresa de desarrollo de software aprendí las tecnologías y herramientas que utilizan en la empresa realizando practicas en equipo para resolver distintos desafíos."
+        "Implementación del <strong>Core Bancario Bantotal</strong> en el <b>Banco de Santiago del Estero (BSE)</b> desde el frente de <b>Interfaces</b>.",
+        "Relevamiento y análisis de <b>reglas de negocio</b> vinculadas a procesos <b>financieros</b>, <b>operativos</b> y <b>normativos</b> del cliente.",
+        "Diseño y ejecución de <b>pruebas funcionales</b> para validar <b>integraciones</b> y <b>procesos</b>.",
+        "Interacción diaria con <b>equipos técnicos</b> y <b>usuarios clave</b> para asegurar el correcto funcionamiento de las <b>interfaces</b> del sistema.",
+        "Colaboración con <b>stakeholders</b> para alinear las <b>soluciones implementadas</b> con los <b>objetivos del negocio</b>."
       ],
-      "keywords": ["XML", "XSLT", "Workday", "Oxygen", "Employability"]
+      "keywords": [
+        "Bantotal",
+        "SQL",
+        "Web Services",
+        "Jira Service Desk",
+        "Waterfall",
+        "Trabajo en equipo",
+        "Adaptabilidad",
+        "Resolución de Problemas"
+      ]
     }
   ],
   "projects": [
+    {
+      "name": "Sala de Juegos",
+      "fullDate": "Abr - May 2025",
+      "summary": [
+        "Descubre nuestra colección de juegos emocionantes diseñados para divertirte y desafiar tus habilidades. ¡Elige tu favorito y comienza a jugar ahora!"
+      ],
+      "keywords": [
+        "Angular",
+        "Supabase",
+        "HTML",
+        "Tailwind CSS",
+        "TypeScript",
+        "Responsive Design"
+      ],
+      "url": "https://sala-de-juegos-by-em40a.vercel.app/"
+    },
     {
       "name": "Punto&Coma Website",
       "fullDate": "Feb. - Mar. 2024",
@@ -57,7 +86,6 @@
         "Astro Framework",
         "Tailwind CSS",
         "TypeScript",
-        "JavaScript ES6",
         "Responsive Design",
         "Figma"
       ],
@@ -81,24 +109,6 @@
       "lightHouse": "https://pagespeed.web.dev/analysis/https-em40a-vercel-app/y5wt0hmwvc?form_factor=desktop"
     },
     {
-      "name": "Reservas de hotel",
-      "fullDate": "Oct. - Dic. 2023",
-      "summary": [
-        "El segundo ejercicio integrador de Laboratorio II es sistema que debe permitir agregar tanto reservas como huéspedes a la base de datos del hotel."
-      ],
-      "keywords": [
-        "C#",
-        ".NET",
-        "SQL Server",
-        "Entity Framework",
-        "WinForms",
-        "Unit Tests",
-        "JSON",
-        "XML"
-      ],
-      "url": "https://github.com/EM40a/Reserva-Ya"
-    },
-    {
       "name": "Edenv SPA",
       "fullDate": "Dic. 2022 - Mar. 2023",
       "summary": [
@@ -106,9 +116,9 @@
       ],
       "url": "https://edenv.vercel.app/",
       "keywords": [
-        "HTML5",
-        "CSS3",
-        "JavaScript ES6",
+        "HTML",
+        "CSS",
+        "JavaScript",
         "SASS",
         "Figma",
         "Responsive Design"
@@ -116,26 +126,61 @@
     }
   ],
   "technologies": [
-    { "name": "HTML5", "src": "/svgs/html5.svg" },
-    { "name": "CSS3", "src": "/svgs/css.svg" },
-    { "name": "JavaScript ES6", "src": "/svgs/javascript.svg" },
-    { "name": "SASS", "src": "/svgs/sass.svg" },
-    { "name": "Tailwind CSS", "src": "/svgs/tailwindcss.svg" },
-    { "name": "Python", "src": "/svgs/python.svg" },
-    { "name": "Git", "src": "/svgs/git.svg" },
-    { "name": "Figma", "src": "/svgs/figma.svg" },
-    { "name": "C#", "src": "/svgs/csharp.svg" },
-    { "name": "Astro Framework", "src": "/svgs/astro.svg" },
-    { "name": ".NET", "src": "/svgs/dotnet.svg" },
-    { "name": "SQL Server", "src": "/svgs/sqlserver.svg" },
-    { "name": "Visual Studio", "src": "/svgs/visualstudio.svg" }
+    {
+      "name": "HTML5",
+      "src": "/svgs/html5.svg"
+    },
+    {
+      "name": "CSS3",
+      "src": "/svgs/css.svg"
+    },
+    {
+      "name": "JavaScript ES6",
+      "src": "/svgs/javascript.svg"
+    },
+    {
+      "name": "SASS",
+      "src": "/svgs/sass.svg"
+    },
+    {
+      "name": "Tailwind CSS",
+      "src": "/svgs/tailwindcss.svg"
+    },
+    {
+      "name": "Python",
+      "src": "/svgs/python.svg"
+    },
+    {
+      "name": "Git",
+      "src": "/svgs/git.svg"
+    },
+    {
+      "name": "Figma",
+      "src": "/svgs/figma.svg"
+    },
+    {
+      "name": "C#",
+      "src": "/svgs/csharp.svg"
+    },
+    {
+      "name": "Astro Framework",
+      "src": "/svgs/astro.svg"
+    },
+    {
+      "name": ".NET Framework",
+      "src": "/svgs/dotnet.svg"
+    },
+    {
+      "name": "SQL Server",
+      "src": "/svgs/sqlserver.svg"
+    }
   ],
   "education": [
     {
       "name": "Universidad Tecnológica Nacional (UTN)",
       "position": "Tecnicatura en Programación",
       "url": "https://fra.utn.edu.ar/",
-      "fullDate": "Feb. 2023 - Actualidad",
+      "fullDate": "Marzo 2023 - Actualidad",
       "summary": [
         "Tuve la oportunidad de aprender sobre el desarrollo de software, bases de datos, entre otras cosas.",
         "Ademas, pude conocer a grandes personas que me ayudaron a crecer y con las que pude trabajar en equipo para resolver distintos desafíos."
@@ -144,30 +189,33 @@
         "Python",
         "C#",
         ".NET Framework",
-        "SQL Server",
         "PHP",
-        "Postman"
+        "Angular",
+        "Supabase",
+        "UML"
       ]
     },
     {
       "name": "Colegio Cruz Del Sur",
       "position": "Bachillerato en Informática",
       "url": "https://www.linkedin.com/company/colegio-cruz-del-sur/",
-      "fullDate": "Mar. 2018 - Dic. 2022",
+      "fullDate": "Finalizado en Diciembre 2022",
       "summary": [
         "El primer vistazo que tuve al mundo IT, donde aprendí las bases de la programación junto a las tecnologías de la información y comunicación (TIC)."
       ],
-      "keywords": ["Python", "MySQL", "Arduino", "Desarrollo Web", "Bootstrap"]
+      "keywords": [
+        "Python",
+        "MySQL",
+        "Arduino",
+        "Desarrollo Web",
+        "Bootstrap"
+      ]
     }
   ],
   "languages": [
     {
-      "language": "Ingles",
+      "language": "Ingles Técnico",
       "fluency": "B1 | Escritura (Intermedio), Habla (Básico)"
-    },
-    {
-      "language": "Español",
-      "fluency": "Nativo"
     }
   ],
   "interests": [
@@ -179,7 +227,6 @@
     "UI",
     "Design System",
     "Atomic Design",
-    "Open Source",
     "SEO"
   ]
 }
